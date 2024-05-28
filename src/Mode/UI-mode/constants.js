@@ -1,5 +1,6 @@
 import npImage from "../../assets/images/np.png";
 import aboutImage from "../../assets/images/aboutImage.jpg";
+import tictactoe from "../../assets/images/tictactoe.png";
 
 const images = [{ title: "about image", src: aboutImage }];
 const navlinks = [
@@ -58,22 +59,23 @@ const skills = [
 ];
 const projects = [
   {
-    title: "Project 1",
-    description: "This is the description for Project 1.",
+    title: "Ntsaki Protection",
+    description:
+      "A security training company offering affordable, grade-specific courses and PSIRA registration services. The goal was to effectively market their value proposition, course details, and pricing to businesses and individuals seeking security training. Key features included intuitive navigation, engaging content, modern design with strong SEO. The website aims to increase visibility, generate leads, streamline communication, and stand out from competitors in the industry.",
     technologies: ["React", "Node.js", "MongoDB"],
     imgUrl: npImage,
     githubUrl: null,
-    liveUrl: null,
+    liveUrl: "https://nqobilersa.github.io/ntsaki_protection/",
     videoUrl: null,
   },
   {
-    title: "Project 2",
-    description: "This is the description for Project 2.",
-    technologies: ["React", "Node.js", "MongoDB"],
-    imgUrl:
-      "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+    title: "Tic Tac Toe",
+    description:
+      "This is a classic Tic Tac Toe game built using HTML, CSS, and JavaScript. The game allows two players to take turns placing their respective marks (X or O) on a 3x3 grid, with the goal of getting three marks in a row (horizontally, vertically, or diagonally) before the other player.",
+    technologies: ["JavaScript", "HTML", "CSS"],
+    imgUrl: tictactoe,
     githubUrl: "https://github.com/example/project2",
-    liveUrl: "https://project2.example.com",
+    liveUrl: "https://nqobilersa.github.io/tic-tac-toe/",
     videoUrl: null,
   },
   {

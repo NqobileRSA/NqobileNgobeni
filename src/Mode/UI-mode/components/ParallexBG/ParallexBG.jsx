@@ -377,7 +377,7 @@ const ParallexBG = () => {
               },
             },
             size: {
-              value: 16,
+              value: 10,
               animation: {
                 count: 0,
                 enable: false,
@@ -534,7 +534,7 @@ const ParallexBG = () => {
             links: {
               blink: false,
               color: {
-                value: "#ffffff",
+                value: "#151a2800",
               },
               consent: false,
               distance: 150,
