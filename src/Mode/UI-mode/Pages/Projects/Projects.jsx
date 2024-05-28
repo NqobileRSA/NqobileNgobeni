@@ -1,0 +1,67 @@
+import React, { useState } from "react";
+import "./Projects.css";
+import { ProjectCard, SectionTitle } from "../../components/components";
+import { motion } from "framer-motion";
+import { useDisclosure } from "@mantine/hooks";
+import { Modal } from "@mantine/core";
+import { projects } from "../../constants";
+
+const getRandomProject = (projects) => {
+  const randomIndex = Math.floor(Math.random() * projects.length);
+  return projects[randomIndex];
+};
+
+const Projects = () => {
+  const [opened, { open, close }] = useDisclosure(false);
+
+  const [randomProject, setRandomProject] = useState(
+    getRandomProject(projects)
+  );
+
+  return (
+    <section id="projects" className="wrapper container">
+      <SectionTitle title="Featured Projects" titleNo="__" />
+      <Modal opened={opened} onClose={close} size="auto" fullScreen>
+        {projects.map((item, index) => (
+          <motion.div
+            key={index}
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            whileInView={{ opacity: 1 }}>
+            <ProjectCard
+              title={item.title}
+              description={item.description}
+              technologies={item.technologies}
+              imgUrl={item.imgUrl}
+              githubUrl={item.githubUrl}
+              liveUrl={item.liveUrl}
+              videoUrl={item.videoUrl}
+              open={open}
+            />
+          </motion.div>
+        ))}
+      </Modal>
+      <motion.div className="project-grid container">
+        <motion.div
+          key={randomProject.title}
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.6 }}>
+          <ProjectCard
+            title={randomProject.title}
+            description={randomProject.description}
+            technologies={randomProject.technologies}
+            imgUrl={randomProject.imgUrl}
+            githubUrl={randomProject.githubUrl}
+            liveUrl={randomProject.liveUrl}
+            videoUrl={randomProject.videoUrl}
+            open={open}
+          />
+        </motion.div>
+      </motion.div>
+    </section>
+  );
+};
+
+export default Projects;

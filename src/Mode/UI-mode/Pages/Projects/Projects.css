@@ -1,0 +1,36 @@
+.wrapper {
+  border-top: 1px solid #2930416b;
+  border-bottom: 1px solid #2930416b;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.mantine-Paper-root,
+.mantine-Modal-header {
+  background: #151a28 !important;
+  color: rgba(255, 255, 255, 0.92);
+  opacity: 0.95 !important;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.archive-title {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
