@@ -1,5 +1,7 @@
 import npImage from "../../assets/images/np.png";
+import aboutImage from "../../assets/images/aboutImage.jpg";
 
+const images = [{ title: "about image", src: aboutImage }];
 const navlinks = [
   {
     label: "Home",
@@ -147,4 +149,4 @@ const services = [
     icon: "bi bi-layout-text-window-reverse",
   },
 ];
-export { navlinks, socials, skills, projects, archiveData, services };
+export { navlinks, socials, skills, projects, archiveData, services, images };

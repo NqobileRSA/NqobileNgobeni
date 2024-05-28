@@ -5,6 +5,8 @@ import ArchiveCard from "./ArchiveCard/ArchiveCard";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import SocialLink from "./SocialLink/SocialLink";
 import SectionTitle from "./SectionTitle/SectionTitle";
+import skillSphere from "./SkillSphere/SkillSphere";
+import ParallexBg from "./ParallexBG/ParallexBG";
 
 export {
   Navbar,
@@ -14,4 +16,6 @@ export {
   ArchiveCard,
   SocialLink,
   SectionTitle,
+  skillSphere,
+  ParallexBg,
 };

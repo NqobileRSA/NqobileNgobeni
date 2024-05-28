@@ -2,10 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./Home.css";
 import { Left, Right } from "../../components/components";
+import SkillSphere from "../../components/SkillSphere/SkillSphere";
 
 const Home = () => {
   return (
-    <section id="home " className="banner conatiner ">
+    <section id="home " className="banner container ">
       <Left />
       <Right />
       <motion.h3
@@ -53,6 +54,7 @@ const Home = () => {
           </motion.button>
         </a>
       </div>
+      <SkillSphere />
     </section>
   );
 };

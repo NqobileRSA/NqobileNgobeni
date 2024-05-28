@@ -63,8 +63,9 @@
   /* justify-content: start; */
 }
 .button {
-  width: 13rem;
-  height: 3.5rem;
+  /* width: 13rem; */
+  /* height: 3.5rem; */
+
   font-size: 1.2rem;
   font-weight: bold;
   border: 0.5px solid #b6b6b634;
@@ -73,7 +74,6 @@
   background-color: transparent;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-right: 25px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -81,6 +81,9 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.3px);
   -webkit-backdrop-filter: blur(4.3px);
+  padding: 10px 20px;
+  height: 3.5rem;
+  min-width: 180px;
 }
 
 .button:hover {
@@ -109,6 +112,10 @@
   }
 }
 @media (max-width: 768px) {
+  .banner {
+    margin-top: 50px;
+  }
+
   .heading-3 {
     font-size: 1rem;
   }
@@ -124,5 +131,13 @@
 
   .actions {
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .actions {
+    margin-inline: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

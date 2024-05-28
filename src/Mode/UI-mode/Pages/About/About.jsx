@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./About.css";
 import { SectionTitle } from "../../components/components";
-import image from "../../../../assets/images/WhatsApp Image 2024-05-21 at 20.51.53_843fe2cf.jpg";
+import { images } from "../../constants";
 
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
         <div className="row">
           <div className="col-lg-4 imageWrap">
             <img
-              src={image}
+              src={images[0].src}
               className="img-fluid "
               style={{ opacity: "0.9" }}
             />
