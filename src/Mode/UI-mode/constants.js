@@ -61,7 +61,7 @@ const projects = [
   {
     title: "Ntsaki Protection",
     description:
-      "A security training company offering affordable, grade-specific courses and PSIRA registration services. The goal was to effectively market their value proposition, course details, and pricing to businesses and individuals seeking security training. Key features included intuitive navigation, engaging content, modern design with strong SEO. The website aims to increase visibility, generate leads, streamline communication, and stand out from competitors in the industry.",
+      "Developed a user-friendly, modern, and SEO-optimized website to market Ntsaki Protection's affordable security training courses, PSIRA services, and differentiate their brand in a competitive industry. The website aims to increase visibility, generate leads, streamline communication, and stand out from competitors in the industry.",
     technologies: ["React", "Node.js", "MongoDB"],
     imgUrl: npImage,
     githubUrl: null,
