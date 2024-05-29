@@ -1,6 +1,7 @@
 import npImage from "../../assets/images/np.png";
 import aboutImage from "../../assets/images/aboutImage.jpg";
 import tictactoe from "../../assets/images/tictactoe.png";
+import youtube from "../../assets/images/youtube.png";
 
 const images = [{ title: "about image", src: aboutImage }];
 const navlinks = [
@@ -74,18 +75,18 @@ const projects = [
       "This is a classic Tic Tac Toe game built using HTML, CSS, and JavaScript. The game allows two players to take turns placing their respective marks (X or O) on a 3x3 grid, with the goal of getting three marks in a row (horizontally, vertically, or diagonally) before the other player.",
     technologies: ["JavaScript", "HTML", "CSS"],
     imgUrl: tictactoe,
-    githubUrl: "https://github.com/example/project2",
+    githubUrl: "https://github.com/NqobileRSA/tic-tac-toe",
     liveUrl: "https://nqobilersa.github.io/tic-tac-toe/",
     videoUrl: null,
   },
   {
-    title: "Project 3",
-    description: "This is the description for Project 3.",
-    technologies: ["React", "Node.js", "MongoDB"],
-    imgUrl:
-      "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
-    githubUrl: "https://github.com/example/project3",
-    liveUrl: "https://project3.example.com",
+    title: "YouTube Clone",
+    description:
+      "A feature-rich YouTube clone built with React, Axios, and the YouTube Data API, offering video playback, search, related recommendations, and a YouTube-inspired UI. Highlights proficiency in API integration, async data handling, complex front-end development, and efficient state management.",
+    technologies: ["React", "React-Bootstrap", "Axios"],
+    imgUrl: youtube,
+    githubUrl: "https://github.com/NqobileRSA/simple_youtubeclone-react",
+    liveUrl: "https://nqobilersa.github.io/simple_youtubeclone-react/",
     videoUrl: null,
   },
 ];
