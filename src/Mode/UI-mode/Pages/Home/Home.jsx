@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./Home.css";
 import { Left, Right } from "../../components/components";
 import SkillSphere from "../../components/SkillSphere/SkillSphere";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
@@ -22,7 +23,21 @@ const Home = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="heading-1">
         Nqobile Ngobeni.
-        <span className="subheading">Full-Stack Developer.</span>
+        <span className="subheading">
+          <Typewriter
+            options={{
+              strings: [
+                "Web-Developer 💻",
+                "Full-Stack Developer 👨🏾‍💻",
+                "Gamer 🎮",
+                "UI | UX Designer 📱",
+              ],
+              autoStart: true,
+              loop: true,
+              delay: 50,
+            }}
+          />
+        </span>
       </motion.h1>
       <motion.p
         initial={{ y: 10, opacity: 0 }}
@@ -54,7 +69,7 @@ const Home = () => {
           </motion.button>
         </a> */}
       </div>
-      <SkillSphere />
+      <SkillSphere style={{ borderLeft: "1px solid white" }} />
     </section>
   );
 };

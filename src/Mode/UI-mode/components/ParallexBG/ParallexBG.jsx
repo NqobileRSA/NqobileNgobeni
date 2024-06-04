@@ -42,9 +42,9 @@ const ParallexBG = () => {
               // "value": "#0d47a1"
             },
             image: "",
-            position: "50% 50%",
-            repeat: "no-repeat",
-            size: "cover",
+            position: "",
+            repeat: "",
+            size: "",
             opacity: 1,
           },
           backgroundMask: {
@@ -82,10 +82,10 @@ const ParallexBG = () => {
               },
               onHover: {
                 enable: true,
-                mode: "repulse",
+                mode: "grab",
                 parallax: {
-                  enable: false,
-                  force: 2,
+                  enable: true,
+                  force: 60,
                   smooth: 10,
                 },
               },
@@ -112,9 +112,11 @@ const ParallexBG = () => {
                 distance: 200,
               },
               bubble: {
-                distance: 200,
-                duration: 0.4,
+                distance: 400,
+                duration: 2,
                 mix: false,
+                opacity: 0.8,
+                size: 40,
                 divs: {
                   distance: 200,
                   duration: 0.4,
@@ -130,7 +132,7 @@ const ParallexBG = () => {
                 radius: 60,
               },
               grab: {
-                distance: 100,
+                distance: 400,
                 links: {
                   blink: false,
                   consent: false,
@@ -327,7 +329,7 @@ const ParallexBG = () => {
                 mode: "delete",
                 value: 0,
               },
-              value: 80,
+              value: 100,
             },
             opacity: {
               value: {
@@ -337,7 +339,7 @@ const ParallexBG = () => {
               animation: {
                 count: 0,
                 enable: true,
-                speed: 1,
+                speed: 3,
                 decay: 0,
                 delay: 0,
                 sync: false,
@@ -370,18 +372,15 @@ const ParallexBG = () => {
                   { src: db },
                   { src: android },
                   { src: apple },
-                  { src: icon1 },
-                  { src: icon2 },
-                  { src: icon3 },
                 ],
               },
             },
             size: {
-              value: 10,
+              value: { min: 10, max: 15 },
               animation: {
                 count: 0,
-                enable: false,
-                speed: 5,
+                enable: true,
+                speed: 20,
                 decay: 0,
                 delay: 0,
                 sync: false,
@@ -391,39 +390,7 @@ const ParallexBG = () => {
               },
             },
             stroke: {
-              width: 1,
-              color: {
-                value: "#ffffff",
-                animation: {
-                  h: {
-                    count: 0,
-                    enable: false,
-                    speed: 1,
-                    decay: 0,
-                    delay: 0,
-                    sync: true,
-                    offset: 0,
-                  },
-                  s: {
-                    count: 0,
-                    enable: false,
-                    speed: 1,
-                    decay: 0,
-                    delay: 0,
-                    sync: true,
-                    offset: 0,
-                  },
-                  l: {
-                    count: 0,
-                    enable: false,
-                    speed: 1,
-                    decay: 0,
-                    delay: 0,
-                    sync: true,
-                    offset: 0,
-                  },
-                },
-              },
+              width: 0,
             },
             zIndex: {
               value: 0,
@@ -534,7 +501,7 @@ const ParallexBG = () => {
             links: {
               blink: false,
               color: {
-                value: "#151a2800",
+                value: "#00000",
               },
               consent: false,
               distance: 150,
@@ -544,7 +511,7 @@ const ParallexBG = () => {
               shadow: {
                 blur: 5,
                 color: {
-                  value: "lime",
+                  value: "#000",
                 },
                 enable: false,
               },
@@ -571,7 +538,7 @@ const ParallexBG = () => {
           style: {},
           themes: [],
           zLayers: 100,
-          name: "Font Awesome",
+          name: "Parallax",
           motion: {
             disable: false,
             reduce: {

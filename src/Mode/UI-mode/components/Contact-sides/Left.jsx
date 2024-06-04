@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContactSides.css";
 import { socials } from "../../constants";
-
+import { ScrollRotate } from "react-scroll-rotate";
 const Left = () => {
   return (
     <div className="left-side">
@@ -13,7 +13,9 @@ const Left = () => {
             rel="noopener noreferrer"
             key={item.id}>
             <span className="social-icon">
-              <i className={item.icon}></i>
+              <ScrollRotate>
+                <i className={item.icon}></i>
+              </ScrollRotate>
             </span>
           </a>
         ))}
