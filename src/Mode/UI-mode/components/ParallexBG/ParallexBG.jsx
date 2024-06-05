@@ -1,17 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import js from "../../../../assets/icons/pngwing.com.png";
-import html from "../../../../assets/icons/pngwing.com (1).png";
-import css from "../../../../assets/icons/pngwing.com (2).png";
-import reactIcon from "../../../../assets/icons/pngwing.com (3).png";
-import node from "../../../../assets/icons/pngwing.com (4).png";
-import db from "../../../../assets/icons/pngwing.com (5).png";
-import android from "../../../../assets/icons/pngwing.com (6).png";
-import apple from "../../../../assets/icons/pngwing.com (7).png";
-import icon1 from "../../../../assets/icons/pngwing.com (8).png";
-import icon2 from "../../../../assets/icons/pngwing.com (9).png";
-import icon3 from "../../../../assets/icons/pngwing.com (10).png";
 
 const ParallexBG = () => {
   const [init, setInit] = useState(false);
@@ -361,22 +350,16 @@ const ParallexBG = () => {
               },
             },
             shape: {
-              type: "image",
-              options: {
-                image: [
-                  { src: js },
-                  { src: html },
-                  { src: node },
-                  { src: reactIcon },
-                  { src: css },
-                  { src: db },
-                  { src: android },
-                  { src: apple },
-                ],
-              },
+              close: true,
+              fill: true,
+              options: {},
+              type: "circle",
             },
             size: {
-              value: { min: 10, max: 15 },
+              value: {
+                min: 1,
+                max: 10,
+              },
               animation: {
                 count: 0,
                 enable: true,
@@ -501,7 +484,7 @@ const ParallexBG = () => {
             links: {
               blink: false,
               color: {
-                value: "#00000",
+                value: "#ffffff",
               },
               consent: false,
               distance: 150,

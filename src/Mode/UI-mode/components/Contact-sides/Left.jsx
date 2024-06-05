@@ -2,6 +2,7 @@ import React from "react";
 import "./ContactSides.css";
 import { socials } from "../../constants";
 import { ScrollRotate } from "react-scroll-rotate";
+
 const Left = () => {
   return (
     <div className="left-side">

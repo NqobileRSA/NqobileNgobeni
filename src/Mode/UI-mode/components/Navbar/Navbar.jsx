@@ -37,7 +37,7 @@ const Navbar = () => {
                       ? "active navmenuItem"
                       : "navmenuItem"
                   }>
-                  <span>{nav.label}</span>
+                  <span>. {nav.label}</span>
                 </a>
               </li>
             ))}

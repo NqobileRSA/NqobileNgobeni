@@ -53,13 +53,17 @@
   background-color: #fff;
 }
 
+h1 {
+  font-family: var(--font-primary);
+}
+
 .header {
   transition: all 0.5s;
   z-index: 99;
-  background: #0e1016;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: #0e1016b3;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
   backdrop-filter: blur(4.3px);
-  -webkit-backdrop-filter: blur(4.3px);
+  /* -webkit-backdrop-filter: blur(4.3px); */
   position: fixed;
   width: 100%;
   top: 0;
@@ -187,6 +191,7 @@
 
   .navbar .get-a-quote,
   .navbar .get-a-quote:focus {
+    background: var(--color-primary);
     padding: 8px 20px;
     border-radius: 4px;
     margin: 15px;
@@ -250,7 +255,7 @@
   inset: 0;
   padding: 50px 0 10px 0;
   margin: 0;
-  background: #0e1016;
+  background: #151a28c4;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.3px);
   -webkit-backdrop-filter: blur(4.3px);
@@ -265,6 +270,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 12px 20px;
+  font-family: var(--font-primary);
   font-size: 17px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.852);

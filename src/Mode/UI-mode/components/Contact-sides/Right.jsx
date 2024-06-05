@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactSides.css";
+
 import { ScrollRotate } from "react-scroll-rotate";
 
 const Right = () => {

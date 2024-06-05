@@ -1,5 +1,9 @@
 .about-me {
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.1px);
+  -webkit-backdrop-filter: blur(2.1px);
+
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.3px);
   -webkit-backdrop-filter: blur(4.3px); */
@@ -159,4 +163,9 @@
     height: 100%;
     /* margin-left: 25%; */
   }
+}
+.about-img {
+  filter: grayscale(95%);
+  opacity: 0.7;
+  /* mix-blend-mode: darken; */
 }

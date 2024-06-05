@@ -28,9 +28,9 @@ const Home = () => {
             options={{
               strings: [
                 "Web-Developer 💻",
-                "Full-Stack Developer 👨🏾‍💻",
+                "Full-Stack Developer.",
                 "Gamer 🎮",
-                "UI | UX Designer 📱",
+                "Mobile-Developer 📱",
               ],
               autoStart: true,
               loop: true,
@@ -59,17 +59,9 @@ const Home = () => {
             Explore My Work
           </motion.button>
         </a>
-        {/* <a href="#contact">
-          <motion.button
-            initial={{ y: 10, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.9 }}
-            className="button btn-2">
-            Contact me
-          </motion.button>
-        </a> */}
       </div>
-      <SkillSphere style={{ borderLeft: "1px solid white" }} />
+
+      <SkillSphere />
     </section>
   );
 };

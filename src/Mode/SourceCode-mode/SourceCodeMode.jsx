@@ -1,11 +1,10 @@
-import React from "react";
-import ComingSoon from "./Pages/ComingSoon/ComingSoon";
+import React, { useState } from "react";
 import "./SourceCodeMode.css";
 
 const SourceCodeMode = () => {
   return (
     <div className="codeMode">
-      <ComingSoon />
+      <h1>Coming soon</h1>
     </div>
   );
 };

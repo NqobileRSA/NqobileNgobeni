@@ -3,11 +3,13 @@ import "./About.css";
 import { SectionTitle } from "../../components/components";
 import image from "../../../../assets/images/aboutImage.jpg";
 import Tilt from "react-parallax-tilt";
-// import "react-parallax-tilt/dist/tilt.css";
 
 const About = () => {
   return (
-    <section className="about-me container wrapper" id="about">
+    <section
+      className="about-me container wrapper"
+      id="about"
+      data-aos="fade-right">
       <SectionTitle title="About Me" titleNo="__" />
       <div className=" p-2">
         <div className="row">
@@ -20,14 +22,14 @@ const About = () => {
               transitionSpeed={1500}
               scale={1.1}
               gyroscope={true}>
-              <img src={image} className="inner-element" alt="pic" />
+              <img src={image} className="inner-element about-img" alt="pic" />
             </Tilt>
           </div>
           <div className="col-lg-8 pt-4 pt-lg-0 content">
             <h3
               className="subtitle"
-              style={{ color: "#4c8caf", fontWeight: "500" }}>
-              Full Stack Developer
+              style={{ color: "#525252", fontWeight: "500" }}>
+              Full-Stack Developer
             </h3>
             <p className="fst-italic">
               Here are a few technologies I’ve been working with recently:
@@ -48,7 +50,7 @@ const About = () => {
                     <h6>Node.js</h6>
                   </li>
                   <li>
-                    <i className="bi bi-activity" />
+                    <i className="bi bi-arrow-bar-right" />
                     <strong>City:</strong> <span>Johannesburg, RSA</span>
                   </li>
                 </ul>
@@ -56,17 +58,17 @@ const About = () => {
               <div className="col-lg-6">
                 <ul>
                   <li>
-                    <i className="bi bi-alt" />
+                    <i className="bi bi-arrow-bar-right" />
                     <h6>React-Native</h6>
                   </li>
                   <li>
-                    <i className="bi bi-alt" /> <h6>Kotlin</h6>
+                    <i className="bi bi-arrow-bar-right" /> <h6>Kotlin</h6>
                   </li>
                   <li>
-                    <i className="bi bi-alt" /> <h6>TypeScript</h6>
+                    <i className="bi bi-arrow-bar-right" /> <h6>TypeScript</h6>
                   </li>
                   <li>
-                    <i className="bi bi-alt" />
+                    <i className="bi bi-arrow-bar-right" />
                     <strong>Freelance:</strong> <span>Available</span>
                   </li>
                 </ul>
@@ -76,8 +78,9 @@ const About = () => {
               As a full-stack developer
               <span
                 style={{
-                  fontSize: "20px",
+                  fontSize: "12px",
                   color: "#08fdd8",
+                  fontFamily: '"Press Start 2P", system-ui',
                 }}>{` < M E R N />`}</span>
               , I excel in creating exceptional web applications with intuitive
               interfaces that bridge the gap between users and technology.

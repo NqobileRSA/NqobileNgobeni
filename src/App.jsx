@@ -2,6 +2,10 @@ import { useState } from "react";
 import "./App.css";
 import UImode from "./Mode/UI-mode/UImode";
 import SourceCodeMode from "./Mode/SourceCode-mode/SourceCodeMode";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 function App() {
   const [codeMode, setCodeMode] = useState(false);
