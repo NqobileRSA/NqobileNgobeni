@@ -7,6 +7,7 @@ import SocialLink from "./SocialLink/SocialLink";
 import SectionTitle from "./SectionTitle/SectionTitle";
 import skillSphere from "./SkillSphere/SkillSphere";
 import ParallexBg from "./ParallexBG/ParallexBG";
+import Room from "./Room/Room";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   SectionTitle,
   skillSphere,
   ParallexBg,
+  Room,
 };

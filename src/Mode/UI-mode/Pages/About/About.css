@@ -1,3 +1,9 @@
+.about-me *,
+.about-me *::after,
+.about-me *::before {
+  user-select: none;
+  transform-style: preserve-3d;
+}
 .about-me {
   background: rgba(0, 0, 0, 0);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);

@@ -4,6 +4,7 @@ import { useDisclosure } from "@mantine/hooks";
 import { Drawer, Button } from "@mantine/core";
 import Modal from "react-bootstrap/Modal";
 import { navlinks } from "../../constants";
+import GlitchText from "../GlitchText/GlitchText";
 
 const Navbar = () => {
   const [opened, { toggle }] = useDisclosure(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
       className="header d-flex align-items-center container-fluid  ">
       <div className="container px-2  d-flex align-items-center justify-content-between mt-2 mb-2">
         <a href="#" className="logo d-flex align-items-center">
-          <h1>Nqobile.</h1>
+          <GlitchText />
         </a>
         <nav id="navbar" className="navbar">
           <ul>
@@ -37,7 +38,7 @@ const Navbar = () => {
                       ? "active navmenuItem"
                       : "navmenuItem"
                   }>
-                  <span>. {nav.label}</span>
+                  <span>{nav.label}</span>
                 </a>
               </li>
             ))}

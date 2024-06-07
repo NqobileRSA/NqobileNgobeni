@@ -44,10 +44,10 @@ const Home = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.8 }}
         className="paragraph">
-        Versatile JavaScript developer specializing in web, mobile, and desktop
-        applications. Passionate about AI and ethical hacking. Balances coding
-        with weightlifting at the gym and immersive video gaming, fueling
-        creativity and dedication.
+        I am a JavaScript programmer with a specialization in web development.
+        In addition to building mobile and desktop applications, I have a
+        particular passion for game development. I am always seeking
+        opportunities to enhance my skills and grow as a programmer.
       </motion.p>
       <div className="actions">
         <a href="#projects">

@@ -2,6 +2,7 @@ import npImage from "../../assets/images/np.png";
 import aboutImage from "../../assets/images/aboutImage.jpg";
 import tictactoe from "../../assets/images/tictactoe.png";
 import youtube from "../../assets/images/youtube.png";
+import portfolioV1 from "../../assets/images/2024-06-07.png";
 
 const images = [{ title: "about image", src: aboutImage }];
 const navlinks = [
@@ -87,6 +88,16 @@ const projects = [
     imgUrl: youtube,
     githubUrl: "https://github.com/NqobileRSA/simple_youtubeclone-react",
     liveUrl: "https://nqobilersa.github.io/simple_youtubeclone-react/",
+    videoUrl: null,
+  },
+  {
+    title: "PortfolioV1",
+    description:
+      "A feature-rich YouTube clone built with React, Axios, and the YouTube Data API, offering video playback, search, related recommendations, and a YouTube-inspired UI. Highlights proficiency in API integration, async data handling, complex front-end development, and efficient state management.",
+    technologies: ["JavaScript", "HTML", "CSS"],
+    imgUrl: portfolioV1,
+    githubUrl: "https://github.com/NqobileRSA/portfolioV1",
+    liveUrl: "https://nqobilersa.github.io/portfolioV1/",
     videoUrl: null,
   },
 ];
