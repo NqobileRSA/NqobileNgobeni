@@ -71,16 +71,6 @@ const projects = [
     videoUrl: null,
   },
   {
-    title: "Tic Tac Toe",
-    description:
-      "This is a classic Tic Tac Toe game built using HTML, CSS, and JavaScript. The game allows two players to take turns placing their respective marks (X or O) on a 3x3 grid, with the goal of getting three marks in a row (horizontally, vertically, or diagonally) before the other player.",
-    technologies: ["JavaScript", "HTML", "CSS"],
-    imgUrl: tictactoe,
-    githubUrl: "https://github.com/NqobileRSA/tic-tac-toe",
-    liveUrl: "https://nqobilersa.github.io/tic-tac-toe/",
-    videoUrl: null,
-  },
-  {
     title: "YouTube Clone",
     description:
       "A feature-rich YouTube clone built with React, Axios, and the YouTube Data API, offering video playback, search, related recommendations, and a YouTube-inspired UI. Highlights proficiency in API integration, async data handling, complex front-end development, and efficient state management.",
