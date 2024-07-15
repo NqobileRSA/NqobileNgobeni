@@ -21,7 +21,7 @@ function App() {
     <div className="app">
       <AnimatedCursor
         innerSize={8}
-        outerSize={55}
+        outerSize={35}
         innerScale={1}
         outerScale={2}
         outerAlpha={0}
@@ -30,7 +30,11 @@ function App() {
           backgroundColor: "#08fdd8",
         }}
         outerStyle={{
-          border: "3px solid #08fdd8",
+          backgroundColor: "transparent",
+          border: "3px solid #b6b6b600",
+          boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+          backdropFilter: "blur(4.3px)",
+          WebkitBackdropFilter: "blur(4.3px)",
         }}
       />
 

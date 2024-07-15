@@ -3,10 +3,14 @@ import "./GlitchText.scss";
 const GlitchText = () => {
   return (
     <span
-      data-text="Nqobile"
+      data-text="<Nqobile/>"
       className="animateText"
-      style={{ fontSize: "20px", fontFamily: '"Press Start 2P", system-ui' }}>
-      Nqobile
+      style={{
+        fontSize: "25px",
+        fontFamily: '"Press Start 2P", system-ui',
+        fontWeight: "bolder",
+      }}>
+      {"<Nqobile/>"}
     </span>
   );
 };

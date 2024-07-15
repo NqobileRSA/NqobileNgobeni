@@ -68,7 +68,7 @@
 
   font-size: 1.2rem;
   font-weight: bold;
-  border: 0.5px solid #b6b6b634;
+  border: 0.5px solid #b6b6b600;
   border-radius: 0.25rem;
   color: #e8e8e8;
   background-color: transparent;
@@ -76,7 +76,7 @@
   transition: background-color 0.3s ease;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-style: normal;
+  font-style: oblique;
   background: transparent;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.3px);

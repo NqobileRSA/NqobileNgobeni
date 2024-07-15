@@ -24,7 +24,7 @@ const UImode = () => {
           <Room />
         </Modal>
 
-        <i
+        {/* <i
           className="bi bi-door-open"
           onClick={open}
           style={{
@@ -35,7 +35,7 @@ const UImode = () => {
             fontSize: "30px",
             cursor: "pointer",
           }}
-        />
+        /> */}
 
         <ParallexBG />
         <Home />

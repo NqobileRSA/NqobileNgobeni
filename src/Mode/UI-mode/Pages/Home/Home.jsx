@@ -27,10 +27,10 @@ const Home = () => {
           <Typewriter
             options={{
               strings: [
-                "Web-Developer 💻",
                 "Full-Stack Developer.",
-                "Gamer 🎮",
-                "Mobile-Developer 📱",
+                "Gamer🎮",
+                "Web-Developer.",
+                -"Mobile-Developer.",
               ],
               autoStart: true,
               loop: true,
