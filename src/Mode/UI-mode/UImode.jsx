@@ -1,10 +1,9 @@
-import React from "react";
-import { useDisclosure } from "@mantine/hooks";
-import { Modal, Button } from "@mantine/core";
-import "./UImode.css";
-import { Navbar, Room } from "./components/components";
-import { About, Archives, Contact, Home, Projects } from "./Pages/Pages";
-import ParallexBG from "./components/ParallexBG/ParallexBG";
+import { useDisclosure } from '@mantine/hooks';
+import { Modal } from '@mantine/core';
+import './UImode.css';
+import { Navbar, Room } from './components/components';
+import { About, Archives, Contact, Home, Projects } from './Pages/Pages';
+import ParallexBG from './components/ParallexBG/ParallexBG';
 
 const UImode = () => {
   const [opened, { open, close }] = useDisclosure(false);
@@ -20,7 +19,8 @@ const UImode = () => {
           // title="This is a fullscreen modal"
           fullScreen
           radius={0}
-          transitionProps={{ transition: "fade", duration: 200 }}>
+          transitionProps={{ transition: 'fade', duration: 200 }}
+        >
           <Room />
         </Modal>
 

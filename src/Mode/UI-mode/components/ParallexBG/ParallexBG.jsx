@@ -1,6 +1,6 @@
-import { useCallback, useEffect, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim";
+import { useCallback, useEffect, useState } from 'react';
+import Particles, { initParticlesEngine } from '@tsparticles/react';
+import { loadSlim } from '@tsparticles/slim';
 
 const ParallexBG = () => {
   const [init, setInit] = useState(false);
@@ -30,17 +30,17 @@ const ParallexBG = () => {
             color: {
               // "value": "#0d47a1"
             },
-            image: "",
-            position: "",
-            repeat: "",
-            size: "",
+            image: '',
+            position: '',
+            repeat: '',
+            size: '',
             opacity: 1,
           },
           backgroundMask: {
-            composite: "destination-out",
+            composite: 'destination-out',
             cover: {
               color: {
-                value: "#fff",
+                value: '#fff',
               },
               opacity: 1,
             },
@@ -57,21 +57,21 @@ const ParallexBG = () => {
           duration: 0,
           fpsLimit: 120,
           interactivity: {
-            detectsOn: "window",
+            detectsOn: 'window',
             events: {
               onClick: {
                 enable: true,
-                mode: "push",
+                mode: 'push',
               },
               onDiv: {
                 selectors: [],
                 enable: false,
                 mode: [],
-                type: "circle",
+                type: 'circle',
               },
               onHover: {
                 enable: true,
-                mode: "grab",
+                mode: 'grab',
                 parallax: {
                   enable: true,
                   force: 60,
@@ -92,7 +92,7 @@ const ParallexBG = () => {
               attract: {
                 distance: 200,
                 duration: 0.4,
-                easing: "ease-out-quad",
+                easing: 'ease-out-quad',
                 factor: 1,
                 maxSpeed: 50,
                 speed: 1,
@@ -142,14 +142,14 @@ const ParallexBG = () => {
                 factor: 100,
                 speed: 1,
                 maxSpeed: 50,
-                easing: "ease-out-quad",
+                easing: 'ease-out-quad',
                 divs: {
                   distance: 200,
                   duration: 0.4,
                   factor: 100,
                   speed: 1,
                   maxSpeed: 50,
-                  easing: "ease-out-quad",
+                  easing: 'ease-out-quad',
                   selectors: [],
                 },
               },
@@ -161,17 +161,17 @@ const ParallexBG = () => {
                 area: {
                   gradient: {
                     start: {
-                      value: "#ffffff",
+                      value: '#ffffff',
                     },
                     stop: {
-                      value: "#000000",
+                      value: '#000000',
                     },
                   },
                   radius: 1000,
                 },
                 shadow: {
                   color: {
-                    value: "#000000",
+                    value: '#000000',
                   },
                   length: 2000,
                 },
@@ -202,14 +202,14 @@ const ParallexBG = () => {
               },
               enable: false,
               maxSpeed: 50,
-              mode: "bounce",
+              mode: 'bounce',
               overlap: {
                 enable: true,
                 retries: 0,
               },
             },
             color: {
-              value: "#ffffff",
+              value: '#ffffff',
               animation: {
                 h: {
                   count: 0,
@@ -263,12 +263,12 @@ const ParallexBG = () => {
               center: {
                 x: 50,
                 y: 50,
-                mode: "percent",
+                mode: 'percent',
                 radius: 0,
               },
               decay: 0,
               distance: {},
-              direction: "none",
+              direction: 'none',
               drift: 0,
               enable: true,
               gravity: {
@@ -286,11 +286,11 @@ const ParallexBG = () => {
                 options: {},
               },
               outModes: {
-                default: "out",
-                bottom: "out",
-                left: "out",
-                right: "out",
-                top: "out",
+                default: 'out',
+                bottom: 'out',
+                left: 'out',
+                right: 'out',
+                top: 'out',
               },
               random: false,
               size: false,
@@ -315,7 +315,7 @@ const ParallexBG = () => {
                 height: 1080,
               },
               limit: {
-                mode: "delete",
+                mode: 'delete',
                 value: 0,
               },
               value: 100,
@@ -332,16 +332,16 @@ const ParallexBG = () => {
                 decay: 0,
                 delay: 0,
                 sync: false,
-                mode: "auto",
-                startValue: "random",
-                destroy: "none",
+                mode: 'auto',
+                startValue: 'random',
+                destroy: 'none',
               },
             },
             reduceDuplicates: false,
             shadow: {
               blur: 0,
               color: {
-                value: "#000",
+                value: '#000',
               },
               enable: false,
               offset: {
@@ -353,7 +353,7 @@ const ParallexBG = () => {
               close: true,
               fill: true,
               options: {},
-              type: "circle",
+              type: 'circle',
             },
             size: {
               value: {
@@ -367,9 +367,9 @@ const ParallexBG = () => {
                 decay: 0,
                 delay: 0,
                 sync: false,
-                mode: "auto",
-                startValue: "random",
-                destroy: "none",
+                mode: 'auto',
+                startValue: 'random',
+                destroy: 'none',
               },
             },
             stroke: {
@@ -383,7 +383,7 @@ const ParallexBG = () => {
             },
             destroy: {
               bounds: {},
-              mode: "none",
+              mode: 'none',
               split: {
                 count: 1,
                 factor: {
@@ -409,7 +409,7 @@ const ParallexBG = () => {
                 enable: false,
                 value: 0,
               },
-              mode: "vertical",
+              mode: 'vertical',
               speed: 25,
             },
             tilt: {
@@ -420,7 +420,7 @@ const ParallexBG = () => {
                 decay: 0,
                 sync: false,
               },
-              direction: "clockwise",
+              direction: 'clockwise',
               enable: false,
             },
             twinkle: {
@@ -462,7 +462,7 @@ const ParallexBG = () => {
                 decay: 0,
                 sync: false,
               },
-              direction: "clockwise",
+              direction: 'clockwise',
               path: false,
             },
             orbit: {
@@ -484,7 +484,7 @@ const ParallexBG = () => {
             links: {
               blink: false,
               color: {
-                value: "#ffffff",
+                value: '#ffffff',
               },
               consent: false,
               distance: 150,
@@ -494,7 +494,7 @@ const ParallexBG = () => {
               shadow: {
                 blur: 5,
                 color: {
-                  value: "#000",
+                  value: '#000',
                 },
                 enable: false,
               },
@@ -521,7 +521,7 @@ const ParallexBG = () => {
           style: {},
           themes: [],
           zLayers: 100,
-          name: "Parallax",
+          name: 'Parallax',
           motion: {
             disable: false,
             reduce: {
