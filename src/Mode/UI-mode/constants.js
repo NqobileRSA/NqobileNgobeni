@@ -110,20 +110,6 @@ const archiveData = [
     link: '  https://github.com/NqobileRSA/Task_Mananger',
   },
   {
-    title: 'Task manager',
-    description:
-      'A full stack task manager application with CRUD operations. Track task completion status at a glance ,View creation and last update times for each task, Toggle task completion with a single click',
-    listItems: ['MongoDB', 'HTML', 'Express', 'Node.js'],
-    link: '  https://github.com/NqobileRSA/Task_Mananger',
-  },
-  {
-    title: 'Task manager',
-    description:
-      'A full stack task manager application with CRUD operations. Track task completion status at a glance ,View creation and last update times for each task, Toggle task completion with a single click',
-    listItems: ['MongoDB', 'HTML', 'Express', 'Node.js'],
-    link: '  https://github.com/NqobileRSA/Task_Mananger',
-  },
-  {
     title: 'Chat App',
     description:
       'A real-time chat application built with MongoDB, React, Express, and Node.js. This application enables users to engage in real-time conversations with each other.',
